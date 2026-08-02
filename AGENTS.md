@@ -12,6 +12,7 @@ This is a hobby project for learning Rust and Apache Iggy, with quantum computin
 - For questions, explanations, investigations, and reviews, do not change files unless the user separately authorizes changes.
 - Before making edits, state the intended scope when it is not obvious.
 - When discussing Rust implementation without an explicit request to edit code, print proposed Rust code to the terminal only; never write it to repository files.
+- Never add, edit, or delete `.rs` files. Print proposed Rust code in chat for the user to interpret and implement.
 
 ## Commits and attribution
 
