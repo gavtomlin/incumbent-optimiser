@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package incumbent.trace;
+
+import "google/protobuf/struct.proto";
+
+enum EventType {
+  EVENT_TYPE_UNSPECIFIED = 0;
+  COLLECTION_EVENT = 1;
+  INSTANCE_EVENT = 2;
+  MACHINE_EVENT = 3;
+  MACHINE_ATTRIBUTE = 4;
+  INSTANCE_USAGE = 5;
+}
+
+message TraceEvent {
+  int64 timestamp_us = 1;
+  int64 sequence = 2;
+  EventType event_type = 3;
+  string source = 4;
+  google.protobuf.Struct payload =5;
+}

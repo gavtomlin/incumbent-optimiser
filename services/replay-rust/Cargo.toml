@@ -6,3 +6,7 @@ license.workspace = true
 
 [dependencies]
 iggy.workspace = true
+rust-common.workspace = true
+prost = "0.14.4"
+prost-types = "0.14.4"
+

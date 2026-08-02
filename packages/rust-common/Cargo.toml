@@ -7,4 +7,8 @@ license.workspace = true
 [dependencies]
 chrono = "0.4.45"
 prost = "0.14.4"
+prost-types = "0.14.4"
 tokio = { version = "1.53.1", features = ["full"] }
+
+[build-dependencies]
+prost-build = "0.14.4"

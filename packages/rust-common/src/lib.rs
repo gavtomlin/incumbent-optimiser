@@ -1,4 +1,7 @@
 // File used to create common libraries for rust services
+
+pub mod proto;
+
 use chrono::Local;
 
 #[derive(Debug, Clone)]
