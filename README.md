@@ -6,16 +6,36 @@ router across multiple solvers on a latency budget for compute utilisation
 
 This chart counts added lines in the `main` history through commit `1aa45c7`. “You” includes all non-Codex author identities; “Codex” means `Codex <codex@local.invalid>`. The chart commit itself is excluded.
 
-```mermaid
-xychart-beta
-    title "Added-line proportion by file type"
-    x-axis ["Rust", "Python", "Markdown", "Protobuf", "Docker", "Makefile"]
-    y-axis "Percentage" 0 --> 100
-    bar [100, 2, 42, 100, 100, 100]
-    bar [0, 98, 58, 0, 0, 0]
+```text
+Added-line proportion by file type
+# = contribution, - = remainder; bars are 50 columns wide
+
+Rust
+  You   [##################################################] 100.0%
+  Codex [--------------------------------------------------]   0.0%
+
+Python
+  You   [#-------------------------------------------------]   1.8%
+  Codex [#################################################-]  98.2%
+
+Markdown
+  You   [#####################-----------------------------]  41.9%
+  Codex [-----------------------------#####################]  58.1%
+
+Protobuf
+  You   [##################################################] 100.0%
+  Codex [--------------------------------------------------]   0.0%
+
+Docker
+  You   [##################################################] 100.0%
+  Codex [--------------------------------------------------]   0.0%
+
+Makefile
+  You   [##################################################] 100.0%
+  Codex [--------------------------------------------------]   0.0%
 ```
 
-The first bar in each category is yours; the second is Codex’s.
+The exact percentages and added-line counts are listed below.
 
 | File type | You | Codex | Added lines |
 | --- | ---: | ---: | ---: |
