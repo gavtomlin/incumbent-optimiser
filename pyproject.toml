@@ -1,0 +1,12 @@
+[tool.uv.workspace]
+members = [
+    "services/router-python",
+    "packages/scheduling-python",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 100
