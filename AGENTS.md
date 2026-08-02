@@ -8,6 +8,8 @@ This is a hobby project for learning Rust and Apache Iggy, with quantum computin
 
 ## Change control
 
+- Default to collaborative guidance: explain, review, and provide commands or code for the user to run or apply. Do not edit files, execute commands, run checks, start containers, make network requests, or create commits unless the user explicitly asks for that exact action.
+- Treat requests to "work through", "try", or "let's" solve a problem as requests for guidance, not authorization to take action.
 - Only modify files when the user explicitly asks for implementation or editing work.
 - For questions, explanations, investigations, and reviews, do not change files unless the user separately authorizes changes.
 - Before making edits, state the intended scope when it is not obvious.
