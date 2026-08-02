@@ -45,8 +45,9 @@ sequenceDiagram
         iggy->>python_router: Consume tasks and machine data for optimisation
         python_router->>python_router: Execute solving algorithms
         python_router->>iggy: Publish routing results
+        python_router->>parquet_logger: Log optimisation outcome and metadata
         iggy->>rust_aggregator: Consume results
         rust_aggregator->>machines: Allocate tasks
-        rust_aggregator->>parquet_logger: Log optimized results
+        rust_aggregator->>parquet_logger: Log machine states after machine allocation takes place 
     end
 ```

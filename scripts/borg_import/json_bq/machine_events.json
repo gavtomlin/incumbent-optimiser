@@ -1,0 +1,81 @@
+[{
+  "time": "1687655299440",
+  "machine_id": "385611578151",
+  "type": "1",
+  "switch_id": "+1VWJQsXJiHPTnLfEiJRudzQxErmdD00l4Iwh+Z/MYA\u003d",
+  "capacity": null,
+  "platform_id": "JQ1tVQBMHBAIISU1gUNXk2powhYumYA+4cB3KzU29l8\u003d",
+  "missing_data_reason": null
+}, {
+  "time": "90134737257",
+  "machine_id": "375997586330",
+  "type": "1",
+  "switch_id": "+MID0TPk5AtCYpEsp9KxczyeufvrlAO6fiXWiUht754\u003d",
+  "capacity": null,
+  "platform_id": "JQ1tVQBMHBAIISU1gUNXk2powhYumYA+4cB3KzU29l8\u003d",
+  "missing_data_reason": null
+}, {
+  "time": "90077226715",
+  "machine_id": "375997549382",
+  "type": "1",
+  "switch_id": "+MID0TPk5AtCYpEsp9KxczyeufvrlAO6fiXWiUht754\u003d",
+  "capacity": null,
+  "platform_id": "JQ1tVQBMHBAIISU1gUNXk2powhYumYA+4cB3KzU29l8\u003d",
+  "missing_data_reason": null
+}, {
+  "time": "89656654754",
+  "machine_id": "375996998784",
+  "type": "1",
+  "switch_id": "+MID0TPk5AtCYpEsp9KxczyeufvrlAO6fiXWiUht754\u003d",
+  "capacity": null,
+  "platform_id": "JQ1tVQBMHBAIISU1gUNXk2powhYumYA+4cB3KzU29l8\u003d",
+  "missing_data_reason": null
+}, {
+  "time": "134215020545",
+  "machine_id": "376623426086",
+  "type": "1",
+  "switch_id": "+MID0TPk5AtCYpEsp9KxczyeufvrlAO6fiXWiUht754\u003d",
+  "capacity": null,
+  "platform_id": "JQ1tVQBMHBAIISU1gUNXk2powhYumYA+4cB3KzU29l8\u003d",
+  "missing_data_reason": null
+}, {
+  "time": "132451373591",
+  "machine_id": "376470209477",
+  "type": "1",
+  "switch_id": "+MID0TPk5AtCYpEsp9KxczyeufvrlAO6fiXWiUht754\u003d",
+  "capacity": null,
+  "platform_id": "JQ1tVQBMHBAIISU1gUNXk2powhYumYA+4cB3KzU29l8\u003d",
+  "missing_data_reason": null
+}, {
+  "time": "89435367093",
+  "machine_id": "375996824525",
+  "type": "1",
+  "switch_id": "+MID0TPk5AtCYpEsp9KxczyeufvrlAO6fiXWiUht754\u003d",
+  "capacity": null,
+  "platform_id": "JQ1tVQBMHBAIISU1gUNXk2powhYumYA+4cB3KzU29l8\u003d",
+  "missing_data_reason": null
+}, {
+  "time": "90113359675",
+  "machine_id": "375997572167",
+  "type": "1",
+  "switch_id": "+MID0TPk5AtCYpEsp9KxczyeufvrlAO6fiXWiUht754\u003d",
+  "capacity": null,
+  "platform_id": "JQ1tVQBMHBAIISU1gUNXk2powhYumYA+4cB3KzU29l8\u003d",
+  "missing_data_reason": null
+}, {
+  "time": "1443647188785",
+  "machine_id": "384666302564",
+  "type": "1",
+  "switch_id": "/ccdDYPk6fXWt2qrzMYQeZluWYxhhnaYEmYjaBEA0ns\u003d",
+  "capacity": null,
+  "platform_id": "JQ1tVQBMHBAIISU1gUNXk2powhYumYA+4cB3KzU29l8\u003d",
+  "missing_data_reason": null
+}, {
+  "time": "89703182129",
+  "machine_id": "375997113395",
+  "type": "1",
+  "switch_id": "0kdfKLeqkk1sN8xXnJ8f63bMq+ciUu2ztSu53+pf1HM\u003d",
+  "capacity": null,
+  "platform_id": "JQ1tVQBMHBAIISU1gUNXk2powhYumYA+4cB3KzU29l8\u003d",
+  "missing_data_reason": null
+}]

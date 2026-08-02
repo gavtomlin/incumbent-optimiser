@@ -1,0 +1,1 @@
+{"timestamp_us":1443647188785,"sequence":2000000000008,"event_type":"machine_event","source":"machine_events","payload":{"time":"1443647188785","machine_id":"384666302564","type":"1","switch_id":"/ccdDYPk6fXWt2qrzMYQeZluWYxhhnaYEmYjaBEA0ns=","capacity":null,"platform_id":"JQ1tVQBMHBAIISU1gUNXk2powhYumYA+4cB3KzU29l8=","missing_data_reason":null}}

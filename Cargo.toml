@@ -1,0 +1,15 @@
+[workspace]
+resolver = "2"
+members = [
+    "packages/rust-common",
+    "services/replay-rust",
+    "services/aggregator-rust",
+]
+
+[workspace.package]
+edition = "2021"
+license = "Apache-2.0"
+
+[workspace.dependencies]
+rust-common = { path = "packages/rust-common" }
+iggy = "0.10.0"

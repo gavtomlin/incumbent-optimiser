@@ -1,0 +1,14 @@
+{
+  "format": "incumbent-optimiser-ordered-trace-v1",
+  "timestamp_unit": "microseconds",
+  "partition_duration_us": 3600000000,
+  "event_count": 47,
+  "partition_count": 31,
+  "event_types": [
+    "collection_event",
+    "instance_event",
+    "machine_event",
+    "machine_attribute",
+    "instance_usage"
+  ]
+}

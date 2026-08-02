@@ -1,0 +1,97 @@
+[{
+  "table_name": "instance_usage",
+  "column_name": "alloc_collection_id",
+  "data_type": "INT64"
+}, {
+  "table_name": "instance_usage",
+  "column_name": "alloc_instance_index",
+  "data_type": "INT64"
+}, {
+  "table_name": "instance_usage",
+  "column_name": "assigned_memory",
+  "data_type": "FLOAT64"
+}, {
+  "table_name": "instance_usage",
+  "column_name": "average_usage",
+  "data_type": "STRUCT\u003ccpus FLOAT64, memory FLOAT64\u003e"
+}, {
+  "table_name": "instance_usage",
+  "column_name": "average_usage.cpus",
+  "data_type": "FLOAT64"
+}, {
+  "table_name": "instance_usage",
+  "column_name": "average_usage.memory",
+  "data_type": "FLOAT64"
+}, {
+  "table_name": "instance_usage",
+  "column_name": "collection_id",
+  "data_type": "INT64"
+}, {
+  "table_name": "instance_usage",
+  "column_name": "collection_type",
+  "data_type": "INT64"
+}, {
+  "table_name": "instance_usage",
+  "column_name": "cpu_usage_distribution",
+  "data_type": "ARRAY\u003cFLOAT64\u003e"
+}, {
+  "table_name": "instance_usage",
+  "column_name": "cycles_per_instruction",
+  "data_type": "FLOAT64"
+}, {
+  "table_name": "instance_usage",
+  "column_name": "end_time",
+  "data_type": "INT64"
+}, {
+  "table_name": "instance_usage",
+  "column_name": "instance_index",
+  "data_type": "INT64"
+}, {
+  "table_name": "instance_usage",
+  "column_name": "machine_id",
+  "data_type": "INT64"
+}, {
+  "table_name": "instance_usage",
+  "column_name": "maximum_usage",
+  "data_type": "STRUCT\u003ccpus FLOAT64, memory FLOAT64\u003e"
+}, {
+  "table_name": "instance_usage",
+  "column_name": "maximum_usage.cpus",
+  "data_type": "FLOAT64"
+}, {
+  "table_name": "instance_usage",
+  "column_name": "maximum_usage.memory",
+  "data_type": "FLOAT64"
+}, {
+  "table_name": "instance_usage",
+  "column_name": "memory_accesses_per_instruction",
+  "data_type": "FLOAT64"
+}, {
+  "table_name": "instance_usage",
+  "column_name": "page_cache_memory",
+  "data_type": "FLOAT64"
+}, {
+  "table_name": "instance_usage",
+  "column_name": "random_sample_usage",
+  "data_type": "STRUCT\u003ccpus FLOAT64, memory FLOAT64\u003e"
+}, {
+  "table_name": "instance_usage",
+  "column_name": "random_sample_usage.cpus",
+  "data_type": "FLOAT64"
+}, {
+  "table_name": "instance_usage",
+  "column_name": "random_sample_usage.memory",
+  "data_type": "FLOAT64"
+}, {
+  "table_name": "instance_usage",
+  "column_name": "sample_rate",
+  "data_type": "FLOAT64"
+}, {
+  "table_name": "instance_usage",
+  "column_name": "start_time",
+  "data_type": "INT64"
+}, {
+  "table_name": "instance_usage",
+  "column_name": "tail_cpu_usage_distribution",
+  "data_type": "ARRAY\u003cFLOAT64\u003e"
+}]

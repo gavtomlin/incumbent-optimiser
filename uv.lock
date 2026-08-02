@@ -1,0 +1,25 @@
+version = 1
+revision = 3
+requires-python = ">=3.12"
+
+[manifest]
+members = [
+    "router-python",
+    "scheduling-python",
+]
+
+[[package]]
+name = "router-python"
+version = "0.1.0"
+source = { virtual = "services/router-python" }
+dependencies = [
+    { name = "scheduling-python" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "scheduling-python", editable = "packages/scheduling-python" }]
+
+[[package]]
+name = "scheduling-python"
+version = "0.1.0"
+source = { editable = "packages/scheduling-python" }

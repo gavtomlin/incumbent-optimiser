@@ -1,0 +1,10 @@
+[project]
+name = "router-python"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["scheduling-python"]
+
+[tool.uv.sources]
+scheduling-python = { workspace = true }
