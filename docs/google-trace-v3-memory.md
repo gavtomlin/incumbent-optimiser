@@ -54,7 +54,7 @@ The normalized model should preserve these IDs as join keys. It should not colla
 - CPU and memory values are independently normalized and generally fall in `[0, 1]` for capacities, although usage can exceed a requested limit under overcommit or available free CPU.
 - Resource requests, capacities, and usage fields are `Resources` structures containing dimensions such as CPU and memory, not scalar values.
 
-Our synthetic fixture currently uses scalar placeholder values. It is useful for pipeline development, but it should eventually be changed to match the nested `Resources` shape before protobuf finalization.
+The synthetic fixture now mirrors the nested `Resources` shape and percentile arrays, but its values remain deliberately synthetic until real usage data is available.
 
 ## Machine events and attributes
 

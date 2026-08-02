@@ -58,6 +58,14 @@ def test_normalized_output_is_ordered_and_partitioned(tmp_path):
         "machine_attribute",
         "machine_event",
     }
+    usage_events = [event for event in events if event["event_type"] == "instance_usage"]
+    assert all(event["end_timestamp_us"] > event["timestamp_us"] for event in usage_events)
+    assert all(
+        set(event["payload"]["average_usage"]) == {"cpus", "memory"}
+        for event in usage_events
+    )
+    assert all(len(event["payload"]["cpu_usage_distribution"]) == 11 for event in usage_events)
+    assert all(len(event["payload"]["tail_cpu_usage_distribution"]) == 9 for event in usage_events)
 
 
 def test_existing_output_requires_explicit_overwrite(tmp_path):

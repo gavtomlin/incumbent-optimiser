@@ -2,6 +2,7 @@ import argparse
 import gzip
 import heapq
 import json
+import math
 import shutil
 import tempfile
 from collections import OrderedDict
@@ -113,14 +114,53 @@ def timestamp_for(source, record):
     return int(value)
 
 
+def validate_resource(value, field, record):
+    if value is None:
+        return
+    if not isinstance(value, dict) or set(value) != {"cpus", "memory"}:
+        raise ValueError(f"{field} must contain cpus and memory: {record}")
+    for dimension, dimension_value in value.items():
+        if dimension_value is not None and (
+            not isinstance(dimension_value, (int, float))
+            or not math.isfinite(dimension_value)
+        ):
+            raise ValueError(f"{field}.{dimension} must be numeric: {record}")
+
+
+def validate_instance_usage_record(record):
+    start_time = timestamp_for("instance_usage", record)
+    end_time = record.get("end_time")
+    if end_time is None or int(end_time) < start_time:
+        raise ValueError(f"instance_usage record has an invalid interval: {record}")
+
+    for field in ("average_usage", "maximum_usage", "random_sample_usage"):
+        validate_resource(record.get(field), field, record)
+    for field in ("cpu_usage_distribution", "tail_cpu_usage_distribution"):
+        distribution = record.get(field)
+        if distribution is not None and (
+            not isinstance(distribution, list)
+            or any(
+                not isinstance(value, (int, float)) or not math.isfinite(value)
+                for value in distribution
+            )
+        ):
+            raise ValueError(f"{field} must be an array of numbers: {record}")
+
+
 def normalize_record(source, row_number, record):
-    return {
+    if source == "instance_usage":
+        validate_instance_usage_record(record)
+
+    event = {
         "timestamp_us": timestamp_for(source, record),
         "sequence": SOURCE_ORDER.index(source) * SEQUENCE_MULTIPLIER + row_number,
         "event_type": SOURCE_TYPES[source],
         "source": source,
         "payload": record,
     }
+    if source == "instance_usage":
+        event["end_timestamp_us"] = int(record["end_time"])
+    return event
 
 
 def iter_events(input_dir):
