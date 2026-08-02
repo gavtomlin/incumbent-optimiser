@@ -26,8 +26,20 @@ __pycache__/
 .venv/
 .pytest_cache/
 .ruff_cache/
+.rumdl_cache/
 *.egg-info
+dist/
+build/
+.coverage
+coverage.xml
+htmlcov/
 
-# env 
+# Local configuration and credentials
 .env
+.env.*
+!.env.example
 
+# Local tooling and OS files
+.codex/
+.DS_Store
+*.log
