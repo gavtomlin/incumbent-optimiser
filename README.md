@@ -4,40 +4,40 @@ router across multiple solvers on a latency budget for compute utilisation
 
 ## Contribution split
 
-This chart counts added lines in the `main` history through commit `1aa45c7`. “You” includes all non-Codex author identities; “Codex” means `Codex <codex@local.invalid>`. The chart commit itself is excluded.
+This chart counts added lines in the `main` history through commits. “Tom” includes all non-Codex author identities; “Codex” means `Codex <codex@local.invalid>`. The chart commit itself is excluded.
 
 ```text
 Added-line proportion by file type
 # = contribution, - = remainder; bars are 50 columns wide
 
 Rust
-  You   [##################################################] 100.0%
+  Tom   [##################################################] 100.0%
   Codex [--------------------------------------------------]   0.0%
 
 Python
-  You   [#-------------------------------------------------]   1.8%
+  Tom   [#-------------------------------------------------]   1.8%
   Codex [#################################################-]  98.2%
 
 Markdown
-  You   [#####################-----------------------------]  41.9%
+  Tom   [#####################-----------------------------]  41.9%
   Codex [-----------------------------#####################]  58.1%
 
 Protobuf
-  You   [##################################################] 100.0%
+  Tom   [##################################################] 100.0%
   Codex [--------------------------------------------------]   0.0%
 
 Docker
-  You   [##################################################] 100.0%
+  Tom   [##################################################] 100.0%
   Codex [--------------------------------------------------]   0.0%
 
 Makefile
-  You   [##################################################] 100.0%
+  Tom   [##################################################] 100.0%
   Codex [--------------------------------------------------]   0.0%
 ```
 
 The exact percentages and added-line counts are listed below.
 
-| File type | You | Codex | Added lines |
+| File type | Tom | Codex | Added lines |
 | --- | ---: | ---: | ---: |
 | Rust | 100.0% | 0.0% | 231 |
 | Python | 1.8% | 98.2% | 440 |
