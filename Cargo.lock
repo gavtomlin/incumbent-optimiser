@@ -46,6 +46,8 @@ dependencies = [
  "rust-common",
  "tokio",
  "tower-http 0.7.0",
+ "tracing",
+ "tracing-subscriber",
 ]
 
 [[package]]
@@ -2985,6 +2987,9 @@ dependencies = [
  "prost",
  "prost-types",
  "rust-common",
+ "tokio",
+ "tracing",
+ "tracing-subscriber",
 ]
 
 [[package]]
@@ -3138,6 +3143,8 @@ dependencies = [
  "prost-build",
  "prost-types",
  "tokio",
+ "tracing",
+ "tracing-subscriber",
 ]
 
 [[package]]
