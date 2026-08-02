@@ -23,6 +23,8 @@ This is a hobby project for learning Rust and Apache Iggy, with quantum computin
 - Never stage unrelated user changes; stage files by name.
 - Never skip hooks with `--no-verify`.
 - Tell the user the commit hash and what it contains.
+- Keep the repository's default Git identity unchanged for the user: `gavtomlin <tomalexander97@gmail.com>`.
+- When Codex creates a commit, explicitly set both author and committer to `Codex <codex@local.invalid>`; do not rely on repository or global Git defaults.
 
 ## Teaching style
 
