@@ -11,6 +11,7 @@ This is a hobby project for learning Rust and Apache Iggy, with quantum computin
 - Only modify files when the user explicitly asks for implementation or editing work.
 - For questions, explanations, investigations, and reviews, do not change files unless the user separately authorizes changes.
 - Before making edits, state the intended scope when it is not obvious.
+- When discussing Rust implementation without an explicit request to edit code, print proposed Rust code to the terminal only; never write it to repository files.
 
 ## Commits and attribution
 
