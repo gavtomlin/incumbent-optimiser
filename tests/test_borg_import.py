@@ -17,6 +17,21 @@ def test_array_and_ndjson_inputs_are_streamed(tmp_path):
     assert list(iter_json_records(ndjson_path)) == [{"value": 3}, {"value": 4}]
 
 
+def test_empty_input_has_no_records_and_invalid_array_fails(tmp_path):
+    empty_path = tmp_path / "empty.json"
+    empty_path.write_text("", encoding="utf-8")
+    invalid_path = tmp_path / "invalid.json"
+    invalid_path.write_text("[{\"value\": 1}", encoding="utf-8")
+
+    assert list(iter_json_records(empty_path)) == []
+    try:
+        list(iter_json_records(invalid_path))
+    except ValueError as error:
+        assert "unterminated JSON array" in str(error)
+    else:
+        raise AssertionError("expected an unterminated JSON array to fail")
+
+
 def test_normalized_output_is_ordered_and_partitioned(tmp_path):
     output_dir = tmp_path / "ordered"
     manifest = normalize_directory(
